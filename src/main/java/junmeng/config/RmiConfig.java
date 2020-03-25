@@ -32,7 +32,7 @@ public class RmiConfig {
     /**
      * 将userService暴露为远程服务
      */
-    @Bean(name = "userHessianService")
+    @Bean(name = "/userHessianService")
     HessianServiceExporter registerHessianExporter() {
         HessianServiceExporter hessianServiceExporter = new HessianServiceExporter();
         hessianServiceExporter.setService(new UserService());
